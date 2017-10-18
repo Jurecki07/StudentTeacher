@@ -26,5 +26,18 @@ public class Student {
         this.id = id;
         this.grade = grade;
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Student)) return false;
 
+        Student student = (Student) o;
+        return getId().equals(student.getId());
+    }
+    @Override
+    public int hashCode() {
+        return getId().hashCode();
+    }
 }
+
+
