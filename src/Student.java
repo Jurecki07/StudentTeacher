@@ -19,4 +19,12 @@ public class Student {
     public Integer getGrade() { return grade; }
 
     public void setGrade(Integer grade) { this.grade = grade; }
+
+    public Student(String firstName, String lastName, Integer id, Integer grade) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.id = id;
+        this.grade = grade;
+    }
+
 }
